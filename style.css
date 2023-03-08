@@ -46,11 +46,7 @@ h3 {
   color: var(--dark-grayish-blue);
 }
 
-h4 {
-  text-decoration-line: line-through;
-  font-style: normal;
-  font-weight: 500;
-}
+
 
 body {
   display: flex;
@@ -110,6 +106,9 @@ main {
 .old-price {
   padding-left: 19px;
   font-size: 13px;
+  text-decoration-line: line-through;
+  font-style: normal;
+  font-weight: 500;
 }
 
 .btn {
