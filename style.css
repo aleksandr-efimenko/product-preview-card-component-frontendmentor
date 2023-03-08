@@ -148,6 +148,7 @@ button:hover {
   bottom: 1rem;
   font-size: 11px;
   text-align: center;
+  width: 100%;
 }
 
 .attribution a {
