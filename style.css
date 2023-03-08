@@ -10,7 +10,8 @@ body {
   --very-dark-blue: hsl(212, 21%, 14%);
 }
 
-h1, h2 {
+h1,
+h2 {
   font-family: 'Fraunces', serif;
 }
 
@@ -27,9 +28,12 @@ h1 {
 h2 {
   font-size: 2rem;
   color: var(--dark-cyan);
+  line-height: 2rem;
 }
 
-h3, h4, p {
+h3,
+h4,
+p {
   color: var(--dark-grayish-blue);
 }
 
@@ -70,7 +74,7 @@ main {
 .image-container {
   background-image: url('./images/image-product-desktop.jpg');
   background-repeat: no-repeat;
-  background-position: left;
+  background-position: center;
   background-size: cover;
   width: 50%;
   border-radius: 10px 0 0 10px;
@@ -84,21 +88,23 @@ main {
   font-size: .875rem;
 }
 
-.description{
+.description {
   font-size: .875rem;
   margin: 1.5rem 0;
   font-weight: 500;
   line-height: 23px;
 }
 
-.main-price, .old-price {
+.main-price,
+.old-price {
   margin: 0
 }
+
 .price {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  margin-top: 1.625rem;
+  margin-top: 29px;
 }
 
 .old-price {
@@ -106,21 +112,20 @@ main {
   font-size: 13px;
 }
 
-
-
 .btn {
   background-color: var(--dark-cyan);
   width: 100%;
   border: transparent;
   border-radius: .5rem;
   height: 3rem;
-  margin-top: 1.65rem;
+  margin-top: 1.875rem;
 
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 11.6px;
 }
+
 .btn p {
   font-family: 'Montserrat', sans-serif;
   color: hsl(0, 0%, 100%);
@@ -135,7 +140,7 @@ main {
 
 button:hover {
   cursor: pointer;
-  background-color:  hsl(157, 43%, 18%);
+  background-color: hsl(157, 43%, 18%);
 }
 
 .attribution {
@@ -147,4 +152,48 @@ button:hover {
 
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media only screen and (max-width: 600px) {
+  .card {
+    flex-direction: column;
+    margin: 1.5rem 1rem;
+    align-items: flex-start;
+    height: auto;
+  }
+
+  .image-container {
+    width: 100%;
+    height: 240px;
+    border-radius: 10px 10px 0 0;
+
+  }
+
+  .desc-container {
+    width: 100%;
+    padding: 1.5rem;
+
+  }
+
+  h1 {
+    margin-top: .75rem;
+  }
+
+  .description {
+    margin: 1rem 0 1.5rem;
+
+  }
+
+  .price {
+    margin-top: 1.5rem;
+
+  }
+
+  .btn {
+    margin-top: 1.25rem;
+  }
+  .image-container {
+    background-image: url('./images/image-product-mobile.jpg');
+
+  }
 }
