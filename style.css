@@ -4,10 +4,48 @@ html,
 body {
   height: 100%;
   margin: 0;
-  
-  --dark-cyan: hsl(158, 36%, 37%);
-  font-family: 'Fraunces', serif;
   font-family: 'Montserrat', sans-serif;
+  --dark-cyan: hsl(158, 36%, 37%);
+  --dark-grayish-blue: hsl(228, 12%, 48%);
+  --very-dark-blue: hsl(212, 21%, 14%);
+}
+
+h1, h2 {
+  font-family: 'Fraunces', serif;
+}
+
+
+h1 {
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 2rem;
+  color: var(--very-dark-blue);
+  margin: 0;
+  margin-top: 1.25rem;
+}
+
+h2 {
+  font-size: 2rem;
+  color: var(--dark-cyan);
+}
+
+h3, h4, p {
+  color: var(--dark-grayish-blue);
+}
+
+h3 {
+  font-weight: 500;
+  font-size: 0.75rem;
+  letter-spacing: 5px;
+  line-height: 15px;
+  margin: 0;
+  color: var(--dark-grayish-blue);
+}
+
+h4 {
+  text-decoration-line: line-through;
+  font-style: normal;
+  font-weight: 500;
 }
 
 body {
@@ -25,6 +63,7 @@ main {
 .card {
   width: 600px;
   height: 450px;
+  border-radius: 10px;
   display: flex;
 }
 
@@ -34,12 +73,69 @@ main {
   background-position: left;
   background-size: cover;
   width: 50%;
+  border-radius: 10px 0 0 10px;
 }
 
 .desc-container {
   width: 50%;
   padding: 2rem;
   box-sizing: border-box;
+  color: var(--dark-grayish-blue);
+  font-size: .875rem;
+}
+
+.description{
+  font-size: .875rem;
+  margin: 1.5rem 0;
+  font-weight: 500;
+  line-height: 23px;
+}
+
+.main-price, .old-price {
+  margin: 0
+}
+.price {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 1.625rem;
+}
+
+.old-price {
+  padding-left: 19px;
+  font-size: 13px;
+}
+
+
+
+.btn {
+  background-color: var(--dark-cyan);
+  width: 100%;
+  border: transparent;
+  border-radius: .5rem;
+  height: 3rem;
+  margin-top: 1.65rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 11.6px;
+}
+.btn p {
+  font-family: 'Montserrat', sans-serif;
+  color: hsl(0, 0%, 100%);
+  font-size: .875rem;
+  font-weight: 700;
+}
+
+.btn img {
+  width: 16px;
+  height: 16px;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color:  hsl(157, 43%, 18%);
 }
 
 .attribution {
