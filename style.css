@@ -39,9 +39,9 @@ p {
 
 h3 {
   font-weight: 500;
-  font-size: 0.75rem;
-  letter-spacing: 5px;
-  line-height: 15px;
+  font-size: .75rem;
+  letter-spacing: .3125rem;
+  line-height: .9375rem;
   margin: 0;
   color: var(--dark-grayish-blue);
 }
@@ -62,8 +62,7 @@ main {
 
 .card {
   width: 600px;
-  height: 450px;
-  border-radius: 10px;
+  border-radius: .625rem;
   display: flex;
 }
 
@@ -73,7 +72,7 @@ main {
   background-position: center;
   background-size: cover;
   width: 50%;
-  border-radius: 10px 0 0 10px;
+  border-radius: .625rem 0 0 .625rem;
 }
 
 .desc-container {
@@ -88,7 +87,7 @@ main {
   font-size: .875rem;
   margin: 1.5rem 0;
   font-weight: 500;
-  line-height: 23px;
+  line-height: 1.4375rem;
 }
 
 .main-price,
@@ -100,12 +99,12 @@ main {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  margin-top: 29px;
+  margin-top: 1.8125rem;
 }
 
 .old-price {
-  padding-left: 19px;
-  font-size: 13px;
+  padding-left: 1.1875rem;
+  font-size: .8125rem;
   text-decoration-line: line-through;
   font-style: normal;
   font-weight: 500;
@@ -122,7 +121,7 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 11.6px;
+  gap: .725rem;
 }
 
 .btn span {
@@ -133,8 +132,8 @@ main {
 }
 
 .btn img {
-  width: 16px;
-  height: 16px;
+  width: 1rem;
+  height: 1rem;
 }
 
 button:hover {
@@ -145,7 +144,7 @@ button:hover {
 .attribution {
   position: absolute;
   bottom: 1rem;
-  font-size: 11px;
+  font-size: .6875rem;
   text-align: center;
   width: 100%;
 }
@@ -164,15 +163,13 @@ button:hover {
 
   .image-container {
     width: 100%;
-    height: 240px;
-    border-radius: 10px 10px 0 0;
-
+    height: 15rem;
+    border-radius: .625rem .625rem 0 0;
   }
 
   .desc-container {
     width: 100%;
     padding: 1.5rem;
-
   }
 
   h1 {
